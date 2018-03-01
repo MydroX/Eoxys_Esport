@@ -1,2 +1,2 @@
 # Web-project
-Repository of all my web project
+Repository of the eoxys esport projecet
