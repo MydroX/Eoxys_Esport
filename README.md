@@ -1,2 +1,2 @@
 # Web-project
-Repository of the eoxys esport projecet
+Repository of the eoxys esport project
