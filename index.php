@@ -1,4 +1,10 @@
-<!DOCTYPE html>
-<html>
+<?php
+require('controller/frontend.php');
 
-</html>
+try {
+    
+}
+
+catch (Exception $e) {
+
+}
