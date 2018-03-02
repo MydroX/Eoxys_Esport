@@ -16,27 +16,27 @@ $(document).ready(function () {
                 borderedLinkNumber = 0;
                 break;
 
-            case 'home.php':
+            case 'home':
                 borderedLinkNumber = 0;
                 break;
 
-            case 'news.php':
+            case 'news':
                 borderedLinkNumber = 1;
                 break;
 
-            case 'teams.php':
+            case 'teams':
                 borderedLinkNumber = 2;
                 break;
 
-            case 'recruitment.php':
+            case 'recruitment':
                 borderedLinkNumber = 3;
                 break;
 
-            case 'partners.php':
+            case 'partners':
                 borderedLinkNumber = 4;
                 break;
 
-            case 'contact.php':
+            case 'contact':
                 borderedLinkNumber = 5;
                 break;
 
