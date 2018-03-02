@@ -27,12 +27,3 @@ class NewsManager extends Manager {
         return $req;
     }
 }
-
-class ResultsManager extends Manager {
-    public function getResults() {
-        $db = $this->dbConnect();
-        $req = $db->query('SELECT * FROM results ORDER BY id DESC LIMIT 0, 3');
-
-        return $req;
-    }
-}
