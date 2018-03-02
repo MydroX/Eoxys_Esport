@@ -1,4 +1,4 @@
-<?php $title = 'Eoxys Esport - Accueil'; ?>
+<?php $title = 'Eoxys Esport - News'; ?>
 
 <?php ob_start(); ?>
 

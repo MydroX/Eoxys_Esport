@@ -9,3 +9,28 @@ function home() {
 
     require ('view/frontend/home.php');
 }
+
+function news() {
+
+    require ('view/frontend/news.php');
+}
+
+function teams() {
+
+    require ('view/frontend/teams.php');
+}
+
+function recruitment() {
+
+    require ('view/frontend/recruitment.php');
+}
+
+function partners() {
+
+    require ('view/frontend/partners.php');
+}
+
+function contact() {
+
+    require ('view/frontend/contact.php');
+}
