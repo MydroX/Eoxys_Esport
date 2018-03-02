@@ -8,12 +8,29 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="public/css/style.css">
+
         <title><?= $title ?></title>
     </head>
 
     <body>
+        <header>
+            <img src="public/images/logo-large.png" alt="Logo Eoxys Esport" id="logo"/>
+            <nav>
+                <ul>
+                    <li><a href="?here=home.php">Accueil</a></li>
+                    <li><a href="?here=news.php">News</a></li>
+                    <li><a href="?here=teams.php">Equipe</a></li>
+                    <li><a href="?here=recruitment.php">Recrutement</a></li>
+                    <li><a href="?here=partners.php">Partenaires</a></li>
+                    <li><a href="?here=contact.php">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <?= $content ?>
+
+        <script src="public/js/navHeader.js"></script>
     </body>
 
 </html>

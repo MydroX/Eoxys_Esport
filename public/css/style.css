@@ -1,4 +1,49 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Raleway, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-image: linear-gradient(to right, #08043f, #050226);
+    height: 150px;
+    border-bottom: 1px solid #FFF;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
+
+    header nav ul {
+        float: right;
+        margin-left: 30px;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        font-size: 21px;
+        margin-right: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 150px;
+        color: white;
+    }
+
+    #logo {
+        height: 75px;
+        float: left;
+        margin: 37.5px 0 37.5px 50px;
+    }
 }
