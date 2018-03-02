@@ -1,6 +1,6 @@
 <?php
 
-namespace Eoxys_Esport\model\;
+namespace Eoxys_Esport\model;
 
 require_once('model/Manager.php');
 
