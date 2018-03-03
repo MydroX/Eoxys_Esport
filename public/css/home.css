@@ -2,3 +2,65 @@ body {
     background: #D8DCE0;
     color: #373837;
 }
+
+#slideshow {
+    float: left;
+    clear: both;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+#slideshow .featured-img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 0.70;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.con {
+    display: flex;
+    height: 100%;
+    padding-bottom: 150px;
+}
+
+.article-title {
+    width: 100%;
+    margin-top: auto;
+}
+
+#slideshow h1 {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: white;
+    margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+    .con {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
