@@ -7,7 +7,7 @@ require_once('model/Manager.php');
 class NewsManager extends Manager {
     public function getNewsHome() {
         $db = $this->dbConnect();
-        $req = $db->query('SELECT * FROM news ORDER BY id DESC LIMIT 0, 3');
+        $req = $db->query('SELECT * FROM news ORDER BY id DESC LIMIT 0, 1');
 
         return $req;
     }

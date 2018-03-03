@@ -11,7 +11,7 @@ li {
 header {
     background-image: linear-gradient(to right, #0e0858, #050226);
     height: 150px;
-    border-bottom: 1px solid #FFF;
+    /*border-bottom: 1px solid #FFF;*/
 }
 
 header a {

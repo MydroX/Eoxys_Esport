@@ -9,7 +9,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="public/css/style.css">
-
+        <link rel="stylesheet" type="text/css" href="public/css/<?= $css ?>">
         <title><?= $title ?></title>
     </head>
 
