@@ -12,6 +12,13 @@ class NewsManager extends Manager {
         return $req;
     }
 
+    public function getHomeNewsTickets() {
+        $db = $this->dbConnect();
+        $req = $db->query('SELECT * FROM news ORDER BY id DESC LIMIT 0,8');
+
+        return $req;
+    }
+
     public function getNewsTicketsDisplay() {
         $db = $this->dbConnect();
         $req = $db->prepare('SELECT * FROM news WHERE id = ?');

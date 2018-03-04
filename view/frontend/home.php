@@ -45,14 +45,34 @@ while ($data = $featureNewsHome->fetch()) {
             ?>
         </div>
     </div>
+</div>
 
 <!-- Partners soon -->
 
-<div id="news">
-
+<div id="news" class="wrapper">
+    <h2>Dernières actualités</h2>
+    <ul>
+        <?php
+        while ($data = $homeNewsTickets->fetch()) {
+            ?>
+            <li class="ticket">
+                <div class="background" style="background: linear-gradient(to top, transparent, #050226),  url(public/uploads/<?= $data['imagePathSmall'] ?>)"></div>
+                <div class="tickets-title">
+                    <span><?= $data['title'] ?></span>
+                </div>
+                <a href="?here=news?id=<?= $data['id'] ?>">
+                    <div class="arrow">
+                        <i class="right-arrow"></i>
+                    </div>
+                </a>
+            </li>
+            <?php
+        }
+        ?>
+    </ul>
 </div>
 
-</div>
+<!-- Add presentation -->
 
 <?php $content = ob_get_clean(); ?>
 <?php require('template.php'); ?>
