@@ -5,8 +5,8 @@ body {
 
 .wrapper {
     width: 70%;
-    margin: auto;
-    height: 100px;
+    margin: 0 auto;
+    height: auto;
 }
 
 h2 {
@@ -79,6 +79,10 @@ h2 {
 }
 
 /* RESULTAT */
+
+#results {
+    height: 60px;
+}
 
 @media screen and (min-width: 1600px) {
     #results .text {
@@ -156,7 +160,7 @@ h2 {
 #news {
     border-top: 1px solid #050226;
     padding-top: 20px;
-    margin: 300px auto;
+    margin-top: 305px;
 }
 
 #news h2 {
@@ -169,6 +173,10 @@ h2 {
 
 #news ul li {
     margin: 15px;
+}
+
+#news .arrow:hover {
+    background: #018DFF;
 }
 
 .ticket {
@@ -185,10 +193,6 @@ h2 {
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
-}
-
-.opacity {
     position: absolute;
 }
 
@@ -214,8 +218,9 @@ h2 {
 }
 
 #news i {
-    position: relative;
-    top: .9em;
+    position: absolute;
+    top: 13px;
+    left: 14px;
     border: solid white;
     border-width: 0 7px 7px 0;
     display: inline-block;
@@ -225,4 +230,33 @@ h2 {
 .right-arrow {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+}
+
+/* PRESENTATION */
+
+#presentation{
+    margin-top: 40px;
+    padding-top: 30px;
+    background: #050226;
+    height: 400px;
+    width: 100%;
+}
+
+#presentation .wrapper {
+    border-bottom: 1px solid white;
+}
+
+#presentation h2 {
+    color: white;
+    font-size: 50px;
+}
+
+#presentation p {
+    color: white;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+#presentation .text {
+    margin: 20px 60px 40px 60px;
 }
