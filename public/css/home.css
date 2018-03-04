@@ -74,23 +74,49 @@ body {
 
 /* RESULTAT */
 
-#results .text {
-    float: left;
-}
-
 #results .text h2 {
-    color: #050226;
-    margin-top: 40px;
-    padding-left: 15px;
-    font-size: 50px;
-    border-left: 5px solid #018DFF;
+        color: #050226;
 }
 
-#results .matches-box {
-    height: auto;
-    float: right;
-    width: 77%;
-    margin-top: 30px;
+@media screen and (min-width: 1600px) {
+    #results .text {
+        float: left;
+        width: 200px;
+    }
+
+    #results .text h2 {
+        margin-top: 40px;
+        padding-left: 15px;
+        font-size: 50px;
+        border-left: 5px solid #018DFF;
+    }
+
+    #results .matches-box {
+        height: auto;
+        float: right;
+        width: 77%;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
+    #results .text h2 {
+        margin-top: 40px;
+        padding-left: 15px;
+        font-size: 50px;
+        border-left: 5px solid #018DFF;
+    }
+
+    #results .matches-box {
+        height: auto;
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+#results .match:last-child {
+    border-bottom: 1px solid #050226;
 }
 
 #results .match {
@@ -102,6 +128,7 @@ body {
 .match .left {
     float: left;
     text-align: left;
+    font-weight: 700;
 }
 
 .game {
@@ -116,5 +143,12 @@ body {
 }
 
 .date {
+    font-size: 14px;
+}
 
+.score {
+    float: right;
+    margin-right: 20px;
+    line-height: 80px;
+    font-size: 25px;
 }

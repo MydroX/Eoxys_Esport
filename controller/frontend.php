@@ -8,7 +8,7 @@ function home() {
     $resultsManager = new \Eoxys_Esport\model\ResultsManager();
 
     $resultsHome = $resultsManager->getResultsHome();
-    $newsHome = $newsManager->getNewsHome();
+    $featureNewsHome = $newsManager->getFeaturedNewsHome();
 
     require ('view/frontend/home.php');
 }

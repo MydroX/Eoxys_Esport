@@ -5,7 +5,7 @@ namespace Eoxys_Esport\model;
 require_once('model/Manager.php');
 
 class NewsManager extends Manager {
-    public function getNewsHome() {
+    public function getFeaturedNewsHome() {
         $db = $this->dbConnect();
         $req = $db->query('SELECT * FROM news ORDER BY id DESC LIMIT 0, 1');
 
