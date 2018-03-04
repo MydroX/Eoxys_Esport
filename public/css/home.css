@@ -242,10 +242,6 @@ h2 {
     width: 100%;
 }
 
-#presentation .wrapper {
-    border-bottom: 1px solid white;
-}
-
 #presentation h2 {
     color: white;
     font-size: 50px;
@@ -258,5 +254,5 @@ h2 {
 }
 
 #presentation .text {
-    margin: 20px 60px 40px 60px;
+    margin: 20px 60px 25px 60px;
 }
