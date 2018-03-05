@@ -38,3 +38,10 @@ function contact() {
 
     require ('view/frontend/contact.php');
 }
+
+function displayTicket($idNews) {
+    $newsManager = new \Eoxys_Esport\model\NewsManager();
+    $newsTicketsDisplay = $newsManager->getNewsTicketsDisplay($idNews);
+
+    require ('view/frontend/displayTicket.php');
+}

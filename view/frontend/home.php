@@ -7,7 +7,7 @@
     <?php
     while ($data = $featureNewsHome->fetch()) {
         ?>
-        <a href="?here=news">
+        <a href="?here=news&id=<?= $data['id'] ?>">
             <div id="slideshow">
                 <div class="featured-img" style="background-image: url(public/uploads/<?= $data['imagePath'] ?>)"></div>
                 <div class="content">
@@ -52,7 +52,7 @@
 </section>
 
 <!-- Partners soon -->
-""
+
 <section>
     <div id="news" class="wrapper">
         <h2>Dernières actualités</h2>
@@ -65,7 +65,7 @@
                     <div class="tickets-title">
                         <span><?= $data['title'] ?></span>
                     </div>
-                    <a href="?here=news?id=<?= $data['id'] ?>">
+                    <a href="?here=news&id=<?= $data['id'] ?>">
                         <div class="arrow">
                             <i class="right-arrow"></i>
                         </div>

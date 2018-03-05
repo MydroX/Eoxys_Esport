@@ -43,6 +43,10 @@ else {
                 borderedLinkNumber = 1;
                 break;
 
+            case 'news&id':
+                borderedLinkNumber = 1;
+                break;
+
             case 'teams':
                 borderedLinkNumber = 2;
                 break;

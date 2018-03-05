@@ -6,8 +6,15 @@ try {
         if($_GET['here'] == 'home')
             home();
 
-        else if($_GET['here'] == 'news')
-            news();
+        else if($_GET['here'] == 'news') {
+                if(isset($_GET['id'])) {
+                    displayTicket($_GET['id']);
+                }
+
+                else {
+                    news();
+                }
+        }
 
         else if($_GET['here'] == 'teams')
             teams();

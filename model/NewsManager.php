@@ -14,14 +14,15 @@ class NewsManager extends Manager {
 
     public function getHomeNewsTickets() {
         $db = $this->dbConnect();
-        $req = $db->query('SELECT * FROM news ORDER BY id DESC LIMIT 0,8');
+        $req = $db->query('SELECT * FROM news ORDER BY id DESC LIMIT 1,9');
 
         return $req;
     }
 
-    public function getNewsTicketsDisplay() {
+    public function getNewsTicketsDisplay($idNews) {
         $db = $this->dbConnect();
-        $req = $db->prepare('SELECT * FROM news WHERE id = ?');
+        $db->query("SET lc_time_names = 'fr_FR'");
+        $req = $db->prepare('SELECT id, title, newsText, imagePath, DATE_FORMAT(date_creation, \'%d %M %Y\') AS date_fr FROM news WHERE id = ?');
         $req->execute(array($idNews));
 
         return $req;
