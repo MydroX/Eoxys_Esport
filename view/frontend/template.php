@@ -3,10 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="description" content="Site officiel de la structure Eoxys Esport">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="public/css/style.css">
         <link rel="stylesheet" type="text/css" href="public/css/<?= $css ?>">
@@ -16,7 +13,7 @@
     <body>
         <header>
             <img src="public/images/logo-large.png" alt="Logo Eoxys Esport" id="logo"/>
-            <nav>
+            <nav class="normal-menu">
                 <ul>
                     <li><a href="?here=home">Accueil</a></li>
                     <li><a href="?here=news">News</a></li>
@@ -26,6 +23,21 @@
                     <li><a href="?here=contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <nav class="dropdown-menu">
+                <div class="dropdown">
+                    <button class="dropdown-button">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="?here=home">Accueil</a>
+                        <a href="?here=news">News</a>
+                        <a href="?here=teams">Equipe</a>
+                        <a href="?here=recruitment">Recrutement</a>
+                        <a href="?here=partners">Partenaires</a>
+                        <a href="?here=contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
         </header>
 
         <?= $content ?>

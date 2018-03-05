@@ -1,6 +1,25 @@
 $(document).ready(function () {
 
+    $(window).resize(function () {
+        var windowWidth = window.innerWidth;
+
+        if (windowWidth >= 1200) {
+            $('header nav ul').children().css({'borderTop':'', 'lineHeight':''});
+            navHeaderStyle();
+        }
+        else {
+            $('header nav ul').children().css({'borderTop':'none', 'lineHeight':'150px'});
+        }
+    });
+
+var windowWidth = window.innerWidth;
+
+if (windowWidth >= 1200) {
     navHeaderStyle();
+}
+else {
+    $('header nav ul').children().css({'borderTop':'none', 'lineHeight':'150px'});
+}
 
     function navHeaderStyle() {
         var $mainMenuLinks = $('header nav ul').children('li');

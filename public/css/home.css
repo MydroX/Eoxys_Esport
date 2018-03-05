@@ -4,8 +4,6 @@ body {
 }
 
 .wrapper {
-    width: 70%;
-    margin: 0 auto;
     height: auto;
 }
 
@@ -13,6 +11,30 @@ h2 {
     border-left: 5px solid #018DFF;
     padding-left: 15px;
     color: #050226;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .wrapper {
+        width: 100%;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h2 {
+        font-size: 50px;
+    }
+
+    .wrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 
 /* SLIDESHOW */
@@ -67,7 +89,7 @@ h2 {
     text-transform: uppercase;
     font-size: 50px;
     color: white;
-    margin: 0;
+    margin-bottom: 180px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -92,7 +114,6 @@ h2 {
 
     #results .text h2 {
         margin-top: 40px;
-        font-size: 50px;
     }
 
     #results .matches-box {
@@ -107,7 +128,6 @@ h2 {
 
     #results .text h2 {
         margin-top: 40px;
-        font-size: 50px;
     }
 
     #results .matches-box {
@@ -117,12 +137,51 @@ h2 {
     }
 }
 
-#results .match:first-child {
-    border-top: none;
+@media screen and (max-width: 700px) {
+    #results .left {
+        float: none;
+    }
+
+    #results .right {
+        float: left;
+    }
+
+    #results .match {
+        height: 150px;
+    }
+
+    #results .match:first-child {
+        border-top: 1px solid #050226;
+    }
+
+    #results .match:last-child {
+        border-bottom: 1px solid #050226;
+    }
+
+    #results .score {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+    #results .match {
+        height: 100px;
+    }
+
+    #results .match:first-child {
+        border-top: none;
+    }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    #results .score {
+        font-size: 20px;
+    }
 }
 
 #results .match {
-    height: 100px;
     border-top: 1px solid #050226;
     padding: 10px 25px;
 }
@@ -163,8 +222,27 @@ h2 {
     margin-top: 305px;
 }
 
+@media screen and (max-width: 1600px) {
+    #news {
+        margin-top: 320px;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 700px) {
+    #news {
+        margin-top: 280px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #news {
+        margin-top: 440px;
+    }
+}
+
 #news h2 {
-    font-size: 50px;
+    margin: 10px 0;
 }
 
 #news ul {
@@ -236,20 +314,30 @@ h2 {
 
 #presentation{
     margin-top: 40px;
-    padding-top: 30px;
+    padding: 30px 0;
     background: #050226;
-    height: 400px;
+    height: auto;
     width: 100%;
 }
 
 #presentation h2 {
     color: white;
-    font-size: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    #presentation p {
+        font-size: 18px
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #presentation p {
+        font-size: 22px;
+    }
 }
 
 #presentation p {
     color: white;
-    font-size: 22px;
     margin: 20px 0;
 }
 
