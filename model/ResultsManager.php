@@ -13,4 +13,11 @@ class ResultsManager extends Manager {
 
         return $req;
     }
+
+    public function addResults() {
+        $db = $this->dbConnect();
+        $req = $db->prepare('INSERT INTO results(game, tournament, opponent_name, opponent_rounds, lineup_name, eoxys_rounds, date_creation) VALUES(:game, :tournament, :opponent_name, :opponent_rounds, :eoxys_rounds, :date_creation)');
+
+        return $req;
+    }
 }

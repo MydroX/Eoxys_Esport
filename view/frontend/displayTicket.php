@@ -1,4 +1,4 @@
-<?php $title = 'Eoxys Esport - Contact'; ?>
+<?php $title = 'Eoxys Esport - News'; ?>
 <?php $css = 'displayTicket.css'; ?>
 
 <?php ob_start(); ?>

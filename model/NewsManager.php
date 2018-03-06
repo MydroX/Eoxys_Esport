@@ -34,4 +34,12 @@ class NewsManager extends Manager {
 
         return $req;
     }
+
+    public function addNews() {
+        $db = $this->dbConnect();
+        $req = $db->prepare('INSERT INTO news(title, newsText, imagePath, imagePathSmall, date_creation) VALUES(:title, :newsText, :imagePath, :imagePathSmall, NOW())');
+
+        return $req;
+    }
+
 }
