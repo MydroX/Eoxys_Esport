@@ -45,6 +45,13 @@ try {
         else if($_GET['here'] == 'reception') {
             if(isset($_FILES['image']) && isset($_POST['title']) && isset($_POST['newsText']))
                 receptionNews($_FILES['image'], $_FILES['small-image'], $_POST['title'], $_POST['newsText']);
+
+            else if(isset($_POST['game']) && isset($_POST['tournament']) && isset($_POST['opponent-name']) && isset($_POST['opponent-rounds']) && isset($_POST['lineup-name']) && isset($_POST['eoxys-rounds']))
+                receptionResults($_POST['game'], $_POST['tournament'], $_POST['opponent-name'], $_POST['opponent-rounds'], $_POST['lineup-name'], $_POST['eoxys-rounds']);
+
+            else {
+                throw new Exception("Transfer Failed");
+            }
         }
 
     else

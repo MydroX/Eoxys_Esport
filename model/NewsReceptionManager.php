@@ -4,7 +4,7 @@ namespace Eoxys_Esport\model;
 
 require_once('model/Manager.php');
 
-class receptionManager extends Manager {
+class AddNewsManager extends Manager {
     private function imageVerif($image) {
 
         $max_size = 3000000;
