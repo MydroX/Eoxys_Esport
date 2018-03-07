@@ -7,14 +7,14 @@
 
 <section>
     <div class="wrapper">
-        <form method="post" action="" enctype="multipart/form-data">
+        <form method="post" action="?here=reception" enctype="multipart/form-data">
             <div class="title">
                 <span>Titre : </span><input type="text" name="title" placeholder="Insérer un titre"/>
             </div>
             <div class="editor">
-                <textarea name="editor1"></textarea>
+                <textarea name="newsText"></textarea>
                 <script>
-                    CKEDITOR.replace( 'editor1' );
+                    CKEDITOR.replace( 'newsText' );
                 </script>
             </div>
             <div class="bottom">

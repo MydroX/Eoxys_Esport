@@ -42,6 +42,11 @@ try {
                 signIn();
         }
 
+        else if($_GET['here'] == 'reception') {
+            if(isset($_FILES['image']) && isset($_POST['title']) && isset($_POST['newsText']))
+                receptionNews($_FILES['image'], $_FILES['small-image'], $_POST['title'], $_POST['newsText']);
+        }
+
     else
         throw new Exception("Error Processing HttpRequest");
 

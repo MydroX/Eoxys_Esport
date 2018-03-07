@@ -2,6 +2,7 @@
 
 require_once ('model/NewsManager.php');
 require_once ('model/ResultsManager.php');
+require_once ('model/NewsReceptionManager.php');
 
 function signIn() {
     require ('view/admin/signIn.php');
@@ -19,4 +20,11 @@ function signInAddNews() {
     $resultsManager = new \Eoxys_Esport\model\ResultsManager();
 
     require ('view/admin/news.php');
+}
+
+function receptionNews($uploadedImageSmall, $uploadedImageLarge, $title, $text) {
+        $receptionManager = new \Eoxys_Esport\model\receptionManager();
+        $reception = $receptionManager->addNews($uploadedImageSmall, $uploadedImageLarge, $title, $text);
+
+    require ('view/admin/addNews.php');
 }
