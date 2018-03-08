@@ -19,6 +19,13 @@ class NewsManager extends Manager {
         return $req;
     }
 
+    public function getNewsNewsTickets() {
+        $db = $this->dbConnect();
+        $req = $db->query('SELECT * FROM news ORDER BY id DESC LIMIT 0,30');
+
+        return $req;
+    }
+
     public function getNewsTicketsDisplay($idNews) {
         $db = $this->dbConnect();
         $db->query("SET lc_time_names = 'fr_FR'");

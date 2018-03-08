@@ -1,0 +1,91 @@
+.game-box {
+    width: 100%;
+    border-bottom: 1px solid #0E0858;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.arrow-down {
+    float: right;
+    margin: 118px 40px;
+}
+
+.game-name {
+    float: left;
+    font-size: 60px;
+    line-height: 300px;
+    margin-left: 60px;
+    color: #FFF;
+}
+
+.lineup {
+    height: auto;
+}
+
+.lineup ul li {
+    display: inline-block;
+    float: right;
+    width: 150px;
+    height: auto;
+    text-align: center;
+    margin: 0 15px;
+}
+
+.player-image {
+    padding: 10px;
+    bo"rder-radius: 5px;
+    border: 2px solid #050226;
+}
+
+.player-name {
+    margin: 10px 0;
+}
+
+.lineup h3 {
+    float: left;
+    font-size: 50px;
+    color: #050226;
+    margin: 38px 0;
+}
+
+.hide-box {
+    margin: 0 8%;
+    display: none;
+}
+
+.display-box {
+    margin: 0 8%;
+}
+
+.one-team {
+    height: 190px;
+    padding-top: 330px;
+}
+
+#LOL {
+    background-image: url(../images/team-banner-lol.jpg);
+}
+
+#RL {
+    background-image: url(../images/team-banner-rl.jpg);
+}
+
+#SC2 {
+    background-image: url(../images/team-banner-sc2.jpg);
+}
+
+#Fortnite {
+    background-image: url(../images/team-banner-fortnite.jpg);
+}
+
+.hidePlayers {
+    height: 300px;
+}
+
+.displayOneTeam {
+    height: 530px;
+}
+
+.displayTwoTeams {
+    height: 760px;
+}
