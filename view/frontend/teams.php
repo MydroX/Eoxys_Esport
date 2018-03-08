@@ -105,7 +105,7 @@
         <img src="public/images/arrow_down.png" alt="fleche vers le bas" class="arrow-down"/>
         <div class="team-box hide-box one-team">
             <div class="lineup">
-                <h3>Eoxys Esport</h3>
+                <h3>Eoxys Esport Orangesucree</h3>
                 <ul class="players">
                     <li>
                         <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>

@@ -28,38 +28,84 @@
     width: 150px;
     height: auto;
     text-align: center;
-    margin: 0 15px;
-}
-
-.player-image {
-    padding: 10px;
-    bo"rder-radius: 5px;
-    border: 2px solid #050226;
-}
-
-.player-name {
-    margin: 10px 0;
 }
 
 .lineup h3 {
     float: left;
-    font-size: 50px;
     color: #050226;
-    margin: 38px 0;
-}
-
-.hide-box {
-    margin: 0 8%;
-    display: none;
-}
-
-.display-box {
-    margin: 0 8%;
 }
 
 .one-team {
     height: 190px;
     padding-top: 330px;
+}
+
+@media screen and (min-width: 1600px) {
+    .lineup ul li {
+        margin: 0 15px;
+    }
+
+    .lineup h3 {
+        margin: 47px 0;
+        font-size: 45px;
+    }
+
+    .hide-box {
+        margin: 0 3%;
+        display: none;
+    }
+
+    .display-box {
+        margin: 0 3%;
+    }
+
+    .player-image {
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid #050226;
+    }
+
+    .player-name {
+        margin: 10px 0;
+    }
+
+}
+
+@media screen and (max-width: 1600px) {
+    .lineup ul {
+        margin-top: 25px;
+    }
+
+    .lineup ul li {
+        margin: 0 0px;
+        max-width: 110px;
+    }
+
+    .lineup h3 {
+        margin: 30px 0;
+        font-size: 30px;
+    }
+
+    .hide-box {
+        margin: 0 2%;
+        display: none;
+    }
+
+    .display-box {
+        margin: 0 2%;
+    }
+
+    .player-image {
+        padding: 5px;
+        border-radius: 3px;
+        height: 70px;
+        border: 2px solid #050226;
+    }
+
+    .player-name {
+        margin: 5px 0;
+    }
+
 }
 
 #LOL {

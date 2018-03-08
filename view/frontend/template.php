@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="description" content="Site officiel de la structure Eoxys Esport">
-        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="icon" type="image/png" href="public/images/icon_eoxys.png" />
         <link rel="stylesheet" type="text/css" href="public/css/style.css">
