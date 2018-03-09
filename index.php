@@ -1,6 +1,7 @@
 <?php
 require('controller/frontend.php');
 require('controller/adminSide.php');
+require('controller/backend.php');
 
 try {
     if(isset($_GET['here'])) {
@@ -52,6 +53,14 @@ try {
             else {
                 throw new Exception("Transfer Failed");
             }
+        }
+
+        else if($_GET['here'] == 'email-reception') {
+            if(isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message'])) {
+                sendEmail($_POST['email'], $_POST['subject'], $_POST['message']);
+            }
+            else
+                throw new Exception("Error with the Email");
         }
 
     else

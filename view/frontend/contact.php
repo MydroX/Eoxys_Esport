@@ -8,13 +8,14 @@
         <h1>Contactez nous</h1>
         <form method="post" action="?here=email-reception">
             <input type="email" name="email" placeholder="Email" required/><br />
-            <input type="text" name="object" placeholder="Objet" required/><br />
-            <textarea placeholder="Message" name="message" cols="60" rows="10" required/></textarea>
+            <input type="text" name="subject" placeholder="Objet" required/><br />
+            <textarea placeholder="Message" name="message" cols="60" rows="10" required/></textarea><br />
+            <button type="submit">Envoyer</button>
         </form>
     </div>
     <div class="right">
         <h1>Informations</h1>
-        <p>Mail : eoxys.esport@gmail.com</p>
+        <p>Mail : contact@eoxys-esport.com</p>
     </div>
 </section>
 
