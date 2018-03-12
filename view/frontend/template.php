@@ -17,7 +17,7 @@
             <nav class="normal-menu">
                 <ul>
                     <li><a href="?here=home">Accueil</a></li>
-                    <li><a href="?here=news">News</a></li>
+                    <li><a href="?here=news&page=0">News</a></li>
                     <li><a href="?here=teams">Equipe</a></li>
                     <li><a href="?here=recruitment">Recrutement</a></li>
                     <li><a href="?here=partners">Partenaires</a></li>
@@ -30,7 +30,7 @@
                     <button class="dropdown-button">Menu</button>
                     <div class="dropdown-content">
                         <a href="?here=home">Accueil</a>
-                        <a href="?here=news">News</a>
+                        <a href="?here=news&page=0">News</a>
                         <a href="?here=teams">Equipe</a>
                         <a href="?here=recruitment">Recrutement</a>
                         <a href="?here=partners">Partenaires</a>

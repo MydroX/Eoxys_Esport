@@ -19,11 +19,14 @@ class NewsManager extends Manager {
         return $req;
     }
 
-    public function getNewsNewsTickets() {
-        $db = $this->dbConnect();
-        $req = $db->query('SELECT * FROM news ORDER BY id DESC LIMIT 0,30');
+    public function getNewsNewsTickets($page) {
+        $db = $this->dbSqliConnect();
+        $req = mysqli_query($db, 'SELECT * FROM news');
+        $rowResults = mysqli_num_rows($req);
 
-        return $req;
+        $number;
+
+        //return $req;
     }
 
     public function getNewsTicketsDisplay($idNews) {
@@ -31,13 +34,6 @@ class NewsManager extends Manager {
         $db->query("SET lc_time_names = 'fr_FR'");
         $req = $db->prepare('SELECT id, title, newsText, imagePath, DATE_FORMAT(date_creation, \'%d %M %Y\') AS date_fr FROM news WHERE id = ?');
         $req->execute(array($idNews));
-
-        return $req;
-    }
-
-    public function getNewsTickets() {
-        $db = $this->dbConnect();
-        $req = $db->query('SELECT * FROM news ORDER BY id');
 
         return $req;
     }

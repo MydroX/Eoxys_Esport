@@ -14,7 +14,9 @@ function home() {
     require ('view/frontend/home.php');
 }
 
-function news() {
+function news($page) {
+    $newsManager = new \Eoxys_Esport\model\NewsManager();
+    $newsNewsTickets = $newsManager->getNewsNewsTickets($page);
 
     require ('view/frontend/news.php');
 }
