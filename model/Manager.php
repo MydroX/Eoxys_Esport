@@ -10,6 +10,7 @@ class Manager {
 
     protected function dbSqliConnect() {
         $db = mysqli_connect('localhost', 'root', '', 'eoxys-esport');
+        mysqli_set_charset($db, 'utf8'); 
         return $db;
     }
 }

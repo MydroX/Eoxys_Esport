@@ -17,7 +17,7 @@
             <nav class="normal-menu">
                 <ul>
                     <li><a href="?here=home">Accueil</a></li>
-                    <li><a href="?here=news&page=0">News</a></li>
+                    <li><a href="?here=news&page=1">News</a></li>
                     <li><a href="?here=teams">Equipe</a></li>
                     <li><a href="?here=recruitment">Recrutement</a></li>
                     <li><a href="?here=partners">Partenaires</a></li>

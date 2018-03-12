@@ -12,13 +12,12 @@ try {
                 if(isset($_GET['id']))
                     displayTicket($_GET['id']);
 
-                elseif(isset($_GET['page']))
-                    news($_GET['page']);
+                elseif(isset($_GET['page'])) {
+                        news($_GET['page']);
+                }
 
                 else
                     throw new Exception("Error Processing Request");
-
-
         }
 
         else if($_GET['here'] == 'teams')

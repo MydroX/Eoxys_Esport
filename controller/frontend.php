@@ -17,6 +17,7 @@ function home() {
 function news($page) {
     $newsManager = new \Eoxys_Esport\model\NewsManager();
     $newsNewsTickets = $newsManager->getNewsNewsTickets($page);
+    $numberOfPages = $newsManager->getNumberOfPages();
 
     require ('view/frontend/news.php');
 }

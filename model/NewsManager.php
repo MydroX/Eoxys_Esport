@@ -5,6 +5,7 @@ namespace Eoxys_Esport\model;
 require_once('model/Manager.php');
 
 class NewsManager extends Manager {
+
     public function getFeaturedNewsHome() {
         $db = $this->dbConnect();
         $req = $db->query('SELECT * FROM news ORDER BY id DESC LIMIT 0, 1');
@@ -19,14 +20,26 @@ class NewsManager extends Manager {
         return $req;
     }
 
-    public function getNewsNewsTickets($page) {
+    public function getNumberOfPages() {
         $db = $this->dbSqliConnect();
         $req = mysqli_query($db, 'SELECT * FROM news');
-        $rowResults = mysqli_num_rows($req);
+        $resultsPerPage = 15;
 
-        $number;
+        $numberOfResults = mysqli_num_rows($req);
+        $numberOfPages = ceil($numberOfResults/$resultsPerPage);
 
-        //return $req;
+        return $numberOfPages;
+    }
+
+    public function getNewsNewsTickets($page) {
+        $db = $this->dbSqliConnect();
+
+        $resultsPerPage = 15;
+        $thisPageFirstResult = ($page - 1) * $resultsPerPage;
+
+        $req = mysqli_query($db, "SELECT * FROM news ORDER BY id DESC LIMIT " . $thisPageFirstResult . ',' . $resultsPerPage);
+
+        return $req;
     }
 
     public function getNewsTicketsDisplay($idNews) {
