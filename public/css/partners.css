@@ -1,0 +1,65 @@
+.wrapper {
+    margin: 40px 10%;
+}
+
+.head-partners {
+    height: 60px;
+}
+
+h1 {
+    border-left: 5px solid #018DFF;
+    padding-left: 15px;
+    color: #050226;
+    font-size: 50px;
+    float: left;
+}
+
+.head-partners a {
+    float: right;
+    padding: 10px 15px;
+    color: white;
+    font-size: 18px;
+    border-radius: 3px;
+    background-color: #050226;
+    margin: 10px 30px;
+}
+
+.head-partners a:hover {
+    background: #018DFF;
+    text-decoration: none;
+}
+
+.company {
+    margin: 35px 0;
+    height: 220px;
+    width: auto;
+}
+
+.company h2 {
+    font-size: 35px;
+    color: #050226;
+}
+
+.company p {
+    font-size: 20px;
+    color: #050226;
+    margin: 15px 0;
+    height: 120px;
+}
+
+.company a {
+    color: #018DFF;
+    font-size: 20px;
+}
+
+.company img {
+    margin: 46px 20px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
