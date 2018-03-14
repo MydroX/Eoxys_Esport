@@ -30,7 +30,7 @@
                     <button class="dropdown-button">Menu</button>
                     <div class="dropdown-content">
                         <a href="?here=home">Accueil</a>
-                        <a href="?here=news&page=0">News</a>
+                        <a href="?here=news&page=1">News</a>
                         <a href="?here=teams">Equipe</a>
                         <a href="?here=recruitment">Recrutement</a>
                         <a href="?here=partners">Partenaires</a>
