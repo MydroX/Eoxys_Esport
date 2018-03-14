@@ -45,23 +45,19 @@
                 <ul class="players">
                     <li>
                         <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
-                        <p class="player-name">player name</p>
+                        <p class="player-name">Akeyn</p>
                     </li>
                     <li>
                         <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
-                        <p class="player-name">player name</p>
+                        <p class="player-name">Espril</p>
                     </li>
                     <li>
                         <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
-                        <p class="player-name">player name</p>
+                        <p class="player-name">Skyip</p>
                     </li>
                     <li>
                         <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
-                        <p class="player-name">player name</p>
-                    </li>
-                    <li>
-                        <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
-                        <p class="player-name">player name</p>
+                        <p class="player-name">Arzeo (Coach)</p>
                     </li>
                 </ul>
             </div>
