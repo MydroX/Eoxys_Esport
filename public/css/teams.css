@@ -116,12 +116,20 @@
     background-image: url(../images/team-banner-rl.jpg);
 }
 
-#SC2 {
-    background-image: url(../images/team-banner-sc2.jpg);
+#TM {
+    background-image: url(../images/banner-tm.jpg);
+}
+
+#R6S {
+    background-image: url(../images/banner-r6s.jpg);
 }
 
 #Fortnite {
     background-image: url(../images/team-banner-fortnite.jpg);
+}
+
+#CSGO {
+    background-image: url(../images/banner-csgo.jpg);
 }
 
 .hidePlayers {

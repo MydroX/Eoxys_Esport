@@ -74,7 +74,7 @@
                 <?php
             }
             ?>
-        </ul>
+        </ul><
     </div>
 </section>
 
@@ -84,10 +84,10 @@
             <h2>Présentation</h2>
             <div class="text">
                 <p>
-                    Eoxys Esport est une association multigaming, prochainement sous loi 1901. Nos objectifs sont clairs : Former des joueurs et des équipes à court terme, pour que l'association s'intègre à des structures qui représentent l'e-sport francophone sur plusieurs jeux, tels que League of Legends, Hearthstone, Overwatch, Rocket League, Fortnite et Rainbow Six Siege.
+                    Eoxys E-Sport est une association multigaming, prochainement sous loi 1901. Nos objectifs sont clairs : Avoir des joueurs et des équipes, pour que l'association s'intègre parmis les structures représentant l'e-sport francophone et international en étant présant sur plusieurs jeux, tels que League of Legends, Hearthstone, Trackmania, Rocket League, Fortnite, Counter Strike et Rainbow Six Siege.
                 </p>
                 <p>
-                    L'association forme et accueil des joueurs de tout niveau même à l'international. Nous ferons en sorte qu' Eoxys Esport corresponde au mieux possible aux joueurs, grâce à notre organisation et une structure solide, afin qu'ils puissent s'entrainer et performer dans les meilleures conditions qui soient.
+                    L'association forme et accueil des joueurs de tout niveau même à l'international. Nous ferons en sorte qu' Eoxys E-Sport corresponde au mieux possible aux joueurs, grâce à notre organisation et une structure solide, afin qu'ils puissent s'entrainer et performer dans les meilleures conditions qui soient.
                 </p>
             </div>
         </div>

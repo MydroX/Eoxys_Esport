@@ -4,12 +4,44 @@
 <?php ob_start(); ?>
 
 <section>
+    <div class="game-box hidePlayers" id="R6S">
+        <h2 class="game-name">R6S</h2>
+        <img src="public/images/arrow_down.png" alt="fleche vers le bas" class="arrow-down"/>
+        <div class="team-box hide-box one-team">
+            <div class="lineup">
+                <h3>Eoxys E-Sport</h3>
+                <ul class="players">
+                    <li>
+                        <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
+                        <p class="player-name">player name</p>
+                    </li>
+                    <li>
+                        <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
+                        <p class="player-name">player name</p>
+                    </li>
+                    <li>
+                        <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
+                        <p class="player-name">player name</p>
+                    </li>
+                    <li>
+                        <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
+                        <p class="player-name">player name</p>
+                    </li>
+                    <li>
+                        <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
+                        <p class="player-name">player name</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <div class="game-box hidePlayers" id="Fortnite">
         <h2 class="game-name">Fortnite</h2>
         <img src="public/images/arrow_down.png" alt="fleche vers le bas" class="arrow-down"/>
         <div class="team-box hide-box one-team">
             <div class="lineup">
-                <h3>Eoxys Esport</h3>
+                <h3>Eoxys E-Sport</h3>
                 <ul class="players">
                     <li>
                         <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
@@ -41,11 +73,11 @@
         <img src="public/images/arrow_down.png" alt="fleche vers le bas" class="arrow-down"/>
         <div class="team-box hide-box one-team">
             <div class="lineup">
-                <h3>Eoxys Esport</h3>
+                <h3>Eoxys E-Sport</h3>
                 <ul class="players">
                     <li>
                         <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
-                        <p class="player-name">Akeyn</p>
+                        <p class="player-name">Lenrid</p>
                     </li>
                     <li>
                         <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
@@ -69,7 +101,7 @@
         <img src="public/images/arrow_down.png" alt="fleche vers le bas" class="arrow-down"/>
         <div class="team-box hide-box one-team">
             <div class="lineup">
-                <h3>Eoxys Esport</h3>
+                <h3>Eoxys E-Sport</h3>
                 <ul class="players">
                     <li>
                         <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
@@ -96,12 +128,32 @@
         </div>
     </div>
 
-    <div class="game-box hidePlayers" id="SC2">
-        <h2 class="game-name">StarCraft 2</h2>
+    <div class="game-box hidePlayers" id="TM">
+        <h2 class="game-name">Trackmania</h2>
         <img src="public/images/arrow_down.png" alt="fleche vers le bas" class="arrow-down"/>
         <div class="team-box hide-box one-team">
             <div class="lineup">
-                <h3>Eoxys Esport Orangesucree</h3>
+                <h3>Eoxys E-Sport</h3>
+                <ul class="players">
+                    <li>
+                        <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
+                        <p class="player-name">Fenrir</p>
+                    </li>
+                    <li>
+                        <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
+                        <p class="player-name">BlackCydonia</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-box hidePlayers" id="CSGO">
+        <h2 class="game-name">CSGO</h2>
+        <img src="public/images/arrow_down.png" alt="fleche vers le bas" class="arrow-down"/>
+        <div class="team-box hide-box one-team">
+            <div class="lineup">
+                <h3>Eoxys E-Sport</h3>
                 <ul class="players">
                     <li>
                         <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>

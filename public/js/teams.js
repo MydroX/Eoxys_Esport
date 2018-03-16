@@ -31,7 +31,7 @@ $(document).ready(function() {
         openIndex = index;
 
         //First if for the game with one team and the elseif for the game with two teams
-        if (index == 0 || index == 1 || index == 2 || index == 3)  {
+        if (index == 0 || index == 1 || index == 2 || index == 3 || index == 4 || index == 5)  {
             $(clickedGame).children('.team-box').removeClass('hide-box');
             $(clickedGame).children('.team-box').addClass('display-box');
             $(clickedGame).removeClass('hidePlayers');
@@ -56,7 +56,7 @@ $(document).ready(function() {
         var clickedGame = $('.game-box').eq(index);
 
         //First if for the game with one team and the elseif for the game with two teams
-        if (index == 0 || index == 1 || index == 2 || index == 3)  {
+        if (index == 0 || index == 1 || index == 2 || index == 3 || index == 4 || index == 5)  {
             $(clickedGame).children('.team-box').removeClass('display-box');
             $(clickedGame).children('.team-box').addClass('hide-box');
             $(clickedGame).removeClass('displayOneTeam');

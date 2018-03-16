@@ -13,7 +13,7 @@
 
     <body>
         <header>
-            <img src="public/images/logo-large.png" alt="Logo Eoxys Esport" id="logo"/>
+            <img src="public/images/logo-large.png" alt="Logo Eoxys E-Sport" id="logo"/>
             <nav class="normal-menu">
                 <ul>
                     <li><a href="?here=home">Accueil</a></li>
