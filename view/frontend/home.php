@@ -1,4 +1,4 @@
-<?php $title = 'Eoxys Esport - Accueil'; ?>
+<?php $title = 'Eoxys E-Sport - Home'; ?>
 <?php $css = 'home.css'; ?>
 
 <?php ob_start(); ?>
@@ -27,7 +27,7 @@
 <section>
     <div id="results" class="wrapper">
         <div class="text">
-            <h2>Derniers résultats</h2>
+            <h2>Latest results</h2>
         </div>
         <div class="scoreboard">
             <div class="matches-box">
@@ -41,7 +41,7 @@
                             <span class="date"><?= $data['date_fr'] ?></span><br />
                         </div>
                         <div class="right">
-                            <span class="score">Eoxys Esport <?= $data['eoxys_rounds']; ?>-<?= $data['opponent_rounds'] ?> <?= $data['opponent_name'] ?></span>
+                            <span class="score">Eoxys E-Sport <?= $data['eoxys_rounds']; ?>-<?= $data['opponent_rounds'] ?> <?= $data['opponent_name'] ?></span>
                         </div>
                     </div><?php
                 }
@@ -55,7 +55,7 @@
 
 <section>
     <div id="news" class="wrapper">
-        <h2>Dernières actualités</h2>
+        <h2>Lastest news</h2>
         <ul>
             <?php
             while ($data = $homeNewsTickets->fetch()) {
@@ -81,13 +81,13 @@
 <section>
     <div id="presentation">
         <div class="wrapper">
-            <h2>Présentation</h2>
+            <h2>Presentation</h2>
             <div class="text">
                 <p>
-                    Eoxys E-Sport est une association multigaming, prochainement sous loi 1901. Nos objectifs sont clairs : Avoir des joueurs et des équipes, pour que l'association s'intègre parmis les structures représentant l'e-sport francophone et international en étant présant sur plusieurs jeux, tels que League of Legends, Hearthstone, Trackmania, Rocket League, Fortnite, Counter Strike et Rainbow Six Siege.
+                    Eoxys Esport is an multigaming association, soon under the french 1901 law. Our objectives are clear : To have players and teams, so that the association integrates among the structures representing the french and international esport in being present on several games, like League of Legends, Hearthstone, Trackmania, Rocket League, Fortnite, Counter Strike and Rainbow Six Siege.
                 </p>
                 <p>
-                    L'association forme et accueil des joueurs de tout niveau même à l'international. Nous ferons en sorte qu' Eoxys E-Sport corresponde au mieux possible aux joueurs, grâce à notre organisation et une structure solide, afin qu'ils puissent s'entrainer et performer dans les meilleures conditions qui soient.
+                    The association trains and welcomes players of all levels even internationaly. We will ensure Eoxys Esport correspond the players as best as possible, thanks to organisation and a solid structure, so that they can train and perform in the best conditions.
                 </p>
             </div>
         </div>

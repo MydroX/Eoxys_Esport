@@ -7,7 +7,6 @@ require_once('model/Manager.php');
 class AddResultsManager extends Manager {
     public function addResults($game, $tournament, $oppenent_name, $opponent_rounds, $lineup_name, $eoxys_rounds) {
         $db = $this->dbConnect();
-        $db->query("SET lc_time_names = 'fr_FR'");
         $req = $db->prepare('INSERT INTO results(game, tournament, opponent_name, opponent_rounds, lineup_name, eoxys_rounds, date_creation) VALUES(:game, :tournament, :opponent_name, :opponent_rounds, :lineup_name, :eoxys_rounds, NOW())');
 
         $req->execute(array(

@@ -1,4 +1,4 @@
-<?php $title = 'Eoxys Esport - Equipes'; ?>
+<?php $title = 'Eoxys E-Sport - Teams'; ?>
 <?php $css = 'teams.css'; ?>
 
 <?php ob_start(); ?>
@@ -77,7 +77,7 @@
                 <ul class="players">
                     <li>
                         <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
-                        <p class="player-name">Lenrid</p>
+                        <p class="player-name">Unknown</p>
                     </li>
                     <li>
                         <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
@@ -142,6 +142,10 @@
                     <li>
                         <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
                         <p class="player-name">BlackCydonia</p>
+                    </li>
+                    <li>
+                        <img src="public/images/question-mark.png" alt="Photo joueur" class="player-image"/>
+                        <p class="player-name">Energiize</p>
                     </li>
                 </ul>
             </div>
