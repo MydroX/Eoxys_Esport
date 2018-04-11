@@ -44,7 +44,6 @@ class NewsManager extends Manager {
 
     public function getNewsTicketsDisplay($idNews) {
         $db = $this->dbConnect();
-        $db->query("SET lc_time_names = 'fr_FR'");
         $req = $db->prepare('SELECT id, title, newsText, imagePath, DATE_FORMAT(date_creation, \'%d %M %Y\') AS date_fr FROM news WHERE id = ?');
         $req->execute(array($idNews));
 

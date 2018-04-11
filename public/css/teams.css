@@ -1,145 +1,105 @@
-.game-box {
-    width: 100%;
-    border-bottom: 1px solid #0E0858;
-    cursor: pointer;
-    background-repeat: no-repeat;
+.wrapper {
+    margin: 40px 17%;
 }
 
-.arrow-down {
-    float: right;
-    margin: 118px 40px;
+.game-box {
+    width: 100%;
+    min-height: 120px;
+    margin: 50px 0;
+    position: relative;
+    border: 1px solid #050226;
+    border-radius: 1px;
+    box-shadow: 2px 2px 10px #141414;
 }
 
 .game-name {
     float: left;
-    font-size: 60px;
-    line-height: 300px;
-    margin-left: 60px;
-    color: #FFF;
+    padding: 45px 45px;
+    background-image: linear-gradient(to right, #0e0858, #0063af);
+    line-height: 30px;
+    color: white;
 }
 
-.lineup {
-    height: auto;
-}
-
-.lineup ul li {
-    display: inline-block;
+.arrow {
     float: right;
-    width: 150px;
-    height: auto;
-    text-align: center;
+    margin: 28px 40px;
 }
 
-.lineup h3 {
+.game-players {
+    margin-top: 120px;
+    background: white;
+}
+
+.game-players ul li {
+    display: block;
+    height: 120px;
+}
+
+.game-players ul li img {
+    margin: 28px 40px;
     float: left;
-    color: #050226;
 }
 
-.one-team {
-    height: 190px;
-    padding-top: 330px;
+.game-players ul li h3 {
+    float: left;
+    line-height: 30px;
+    font-size: 24px;
+    margin: 45px 0;
 }
 
-@media screen and (min-width: 1600px) {
-    .lineup ul li {
-        margin: 0 15px;
-    }
-
-    .lineup h3 {
-        margin: 47px 0;
-        font-size: 45px;
-    }
-
-    .hide-box {
-        margin: 0 3%;
-        display: none;
-    }
-
-    .display-box {
-        margin: 0 3%;
-    }
-
-    .player-image {
-        padding: 10px;
-        border-radius: 5px;
-        border: 2px solid #050226;
-    }
-
-    .player-name {
-        margin: 10px 0;
-    }
-
+.game-players ul li span {
+    font-weight: normal;
+    float: left;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 45px 7px;
+}
+.hide-players {
+    display: none;
 }
 
-@media screen and (max-width: 1600px) {
-    .lineup ul {
-        margin-top: 25px;
-    }
-
-    .lineup ul li {
-        margin: 0 0px;
-        max-width: 110px;
-    }
-
-    .lineup h3 {
-        margin: 30px 0;
-        font-size: 30px;
-    }
-
-    .hide-box {
-        margin: 0 2%;
-        display: none;
-    }
-
-    .display-box {
-        margin: 0 2%;
-    }
-
-    .player-image {
-        padding: 5px;
-        border-radius: 3px;
-        height: 70px;
-        border: 2px solid #050226;
-    }
-
-    .player-name {
-        margin: 5px 0;
-    }
-
-}
-
-#LOL {
-    background-image: url(../images/team-banner-lol.jpg);
+.lineupSeperation {
+    margin: 10px 50px;
+    font-size: 26px;
+    line-height: 30px;
+    float: left;
 }
 
 #RL {
-    background-image: url(../images/team-banner-rl.jpg);
+    background-image: url('../images/banner-rl.jpg');
 }
 
 #TM {
-    background-image: url(../images/banner-tm.jpg);
-}
-
-#R6S {
-    background-image: url(../images/banner-r6s.jpg);
+    background-image: url('../images/banner-tm.jpg');
+    background-position: center;
 }
 
 #Fortnite {
-    background-image: url(../images/team-banner-fortnite.jpg);
+    background-image: url('../images/banner-fortnite.jpg');
+    background-position: center;
+}
+
+#LOL {
+    background-image: url('../images/banner-lol.jpg');
+    background-position: center;
+}
+
+#R6S {
+    background-image: url('../images/banner-r6s.jpg');
+    background-position: center;
 }
 
 #CSGO {
-    background-image: url(../images/banner-csgo.jpg);
+    background-image: url('../images/banner-csgo.jpg');
+    background-position: center;
 }
 
-.hidePlayers {
-    height: 300px;
+#HS {
+    background-image: url('../images/banner-hs.jpg');
+    background-position: center;
 }
 
-.displayOneTeam {
-    height: 530px;
-}
-
-.displayTwoTeams {
-    height: 760px;
+#evo {
+    background-image: url('../images/banner-evo.jpg');
+    background-position: center;
 }

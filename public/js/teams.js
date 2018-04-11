@@ -1,80 +1,46 @@
 $(document).ready(function() {
 
-    var isGameUse = false;
+    var isIndexOpen = false;
     var openIndex;
 
-    $('.game-box').click(function() {
+    $(".game-box").click(function () {
         var indexGameClicked = $(this).index();
+        console.log(isIndexOpen);
+        console.log(indexGameClicked);
+        console.log(openIndex);
 
-        if(isGameUse == false) {
+        if(isIndexOpen == false) {
             displayPlayers(indexGameClicked);
+            isIndexOpen = true;
+            openIndex = indexGameClicked;
         }
 
-        else if(isGameUse == true) {
+        else if(isIndexOpen == true) {
             if(indexGameClicked != openIndex) {
                 hidePlayers(openIndex);
                 displayPlayers(indexGameClicked);
+                openIndex = indexGameClicked;
             }
             else if(indexGameClicked == openIndex) {
                 hidePlayers(indexGameClicked);
+                openIndex = indexGameClicked;
+                isIndexOpen = false;
             }
 
-            else {
-                console.log("Error index")
-            }
+            else
+                console.log("Error Index");
         }
 
     });
 
     function displayPlayers(index) {
-        var clickedGame = $('.game-box').eq(index);
-        openIndex = index;
-
-        //First if for the game with one team and the elseif for the game with two teams
-        if (index == 0 || index == 1 || index == 2 || index == 3 || index == 4 || index == 5)  {
-            $(clickedGame).children('.team-box').removeClass('hide-box');
-            $(clickedGame).children('.team-box').addClass('display-box');
-            $(clickedGame).removeClass('hidePlayers');
-            $(clickedGame).addClass('displayOneTeam');
-        }
-/*
-        else if (index == 0 || index == 1) {
-            $(clickedGame).children('.team-box').removeClass('hide-box');
-            $(clickedGame).children('.team-box').addClass('display-box');
-            $(clickedGame).removeClass('hidePlayers');
-            $(clickedGame).addClass('displayTwoTeams');
-        }
-*/
-        else {
-            console.log('Error index')
-        }
-
-        isGameUse = true;
+        var clickedGame = $('.game-box').eq(index).children(".game-players");
+        $(clickedGame).removeClass('hide-players');
     }
 
     function hidePlayers(index) {
-        var clickedGame = $('.game-box').eq(index);
-
-        //First if for the game with one team and the elseif for the game with two teams
-        if (index == 0 || index == 1 || index == 2 || index == 3 || index == 4 || index == 5)  {
-            $(clickedGame).children('.team-box').removeClass('display-box');
-            $(clickedGame).children('.team-box').addClass('hide-box');
-            $(clickedGame).removeClass('displayOneTeam');
-            $(clickedGame).addClass('hidePlayers');
-        }
-/*
-        else if (index == 0 || index == 1) {
-            $(clickedGame).children('.team-box').removeClass('display-box');
-            $(clickedGame).children('.team-box').addClass('hide-box');
-            $(clickedGame).removeClass('displayTwoTeams');
-            $(clickedGame).addClass('hidePlayers');
-        }
-*/
-        else {
-            console.log('Error index')
-        }
-
-        isGameUse = false;
+        var clickedGame = $('.game-box').eq(index).children(".game-players");
+        $(clickedGame).addClass('hide-players');
     }
 
 });
