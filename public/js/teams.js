@@ -4,10 +4,8 @@ $(document).ready(function() {
     var openIndex;
 
     $(".game-box").click(function () {
+
         var indexGameClicked = $(this).index();
-        console.log(isIndexOpen);
-        console.log(indexGameClicked);
-        console.log(openIndex);
 
         if(isIndexOpen == false) {
             displayPlayers(indexGameClicked);
@@ -35,11 +33,15 @@ $(document).ready(function() {
 
     function displayPlayers(index) {
         var clickedGame = $('.game-box').eq(index).children(".game-players");
+        var arrowUsed = $('.game-box').eq(index).children('.arrow');
+        $(arrowUsed).addClass('rotate');
         $(clickedGame).removeClass('hide-players');
     }
 
     function hidePlayers(index) {
         var clickedGame = $('.game-box').eq(index).children(".game-players");
+        var arrowUsed = $('.game-box').eq(index).children('.arrow');
+        $(arrowUsed).removeClass('rotate');
         $(clickedGame).addClass('hide-players');
     }
 

@@ -25,6 +25,10 @@
     margin: 28px 40px;
 }
 
+.rotate {
+    transform:rotateX(180deg);
+}
+
 .game-players {
     margin-top: 120px;
     background: white;
@@ -71,7 +75,6 @@
 
 #TM {
     background-image: url('../images/banner-tm.jpg');
-    background-position: center;
 }
 
 #Fortnite {
@@ -81,12 +84,10 @@
 
 #LOL {
     background-image: url('../images/banner-lol.jpg');
-    background-position: center;
 }
 
 #R6S {
     background-image: url('../images/banner-r6s.jpg');
-    background-position: center;
 }
 
 #CSGO {

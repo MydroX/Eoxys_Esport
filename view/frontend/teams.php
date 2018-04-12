@@ -24,7 +24,7 @@
                 </li>
                 <li>
                     <img src="public/images/blank-user-profile.png"/>
-                    <h3>S7VN</h3><span>- Player</span>
+                    <h3>S7VN.</h3><span>- Player</span>
                 </li>
                 <li style="height: 50px">
                     <h4 class="lineupSeperation">Line up Green</h4>
@@ -148,6 +148,10 @@
                 <li>
                     <img src="public/images/blank-user-profile.png"/>
                     <h3>Xenon</h3><span>- Player</span>
+                </li>
+                <li>
+                    <img src="public/images/blank-user-profile.png"/>
+                    <h3>Shoot_LeHibou</h3><span>- Player</span>
                 </li>
                 <li>
                     <img src="public/images/blank-user-profile.png"/>
