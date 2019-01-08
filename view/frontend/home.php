@@ -32,7 +32,7 @@
         <div class="scoreboard">
             <div class="matches-box">
                 <?php
-                while ($data = $resultsHome->fetch()) {
+               while ($data = $resultsHome->fetch()) {
                     ?>
                     <div class="match">
                         <div class="left">
