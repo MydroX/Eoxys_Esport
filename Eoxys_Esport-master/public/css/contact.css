@@ -1,0 +1,73 @@
+body {
+    color: #050226;
+}
+
+h1 {
+    border-left: 5px solid #018dff;
+    padding-left: 15px;
+    font-size: 50px;
+}
+
+.wrapper {
+    margin: 40px 10%;
+}
+
+@media screen and (min-width: 1400px) {
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+        text-align: left;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .right {
+        text-align: left;
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+.right p {
+    font-size: 18px;
+    color: #050266;
+    margin: 20px 40px;
+}
+
+form {
+    margin-top: 15px
+}
+
+input {
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    background: #d1d1d1;
+    font-size: 18px;
+    width: 566px;
+}
+
+textarea {
+    padding: 15px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    background: #d1d1d1;
+    font-size: 18px;
+}
+
+.left button {
+    padding: 10px;
+    margin: 10px 0 10px 255px;
+    border-radius: 5px;
+    background: #d1d1d1;
+    font-size: 18px;
+}
+
+.left button:hover {
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3) inset;
+    border: none; 
+}

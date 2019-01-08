@@ -1,0 +1,18 @@
+body {
+    color: #050226;
+    text-align: center;
+}
+
+.wrapper {
+    margin: 30px 15%;
+}
+
+label, input, select {
+    margin: 10px 0;
+}
+
+#submit-button {
+    width: 70px;
+    height: 30px;
+    margin: 15px 0;
+}
